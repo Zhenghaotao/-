@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/bg_setting"
+    android:padding="5dp" >
+
+    <EditText
+        android:id="@+id/et_comement_content"
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:background="@drawable/listitem_hover"
+        android:gravity="top|left"
+        android:hint="来吧，给TA一点帮助吧..."
+        android:maxLength="1000"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_publish_comment"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_comement_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_blue"
+        android:text="回复"
+        android:textColor="#ffffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_comement_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_close" />
+
+</RelativeLayout>

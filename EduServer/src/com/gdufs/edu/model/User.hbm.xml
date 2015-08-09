@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gdufs.edu.model">
+	<class name="User" table="user">
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="nickname" column="nickname" type="java.lang.String"
+			unique="false" />
+		<property name="imei" column="imei" type="java.lang.String" />
+		<property name="uploadCount" column="uploadCount" type="int" />
+		<property name="createTime" column="createTime" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

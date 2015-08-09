@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gdufs.edu.model">
+	<class name="com.gdufs.edu.model.Comment" table="comment">
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="questionId" column="questionId" type="int"/>
+		<property name="userId" column="userId" type="int" />
+		<property name="content" column="content" type="java.lang.String" />
+		<property name="nickname" column="nickname" type="java.lang.String" />
+		<property name="rank" column="rank" type="java.lang.String" />
+		<property name="timestamp" column="timestamp" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

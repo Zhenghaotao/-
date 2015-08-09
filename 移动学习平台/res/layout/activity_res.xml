@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/res_host"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/tab_widget_bg" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/res_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- 隐藏 -->
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <fragment
+                    android:id="@+id/frag_share"
+                    android:name="com.gdufs.studyplatform.frame.res.ShareFrag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+                <fragment
+                    android:id="@+id/frag_record"
+                    android:name="com.gdufs.studyplatform.frame.res.RecordFrag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

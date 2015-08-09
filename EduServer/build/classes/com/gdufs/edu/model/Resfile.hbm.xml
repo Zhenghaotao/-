@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gdufs.edu.model">
+	<class name="com.gdufs.edu.model.ResFile" table="resfile">
+		<id name="id" type="int" column="id">
+		<generator class="native" />
+		</id>
+		<property name="nickname" column="nickname"  type="java.lang.String"   />
+		<property name="filename" column="filename" type="java.lang.String" />
+		<property name="url" column="url" type="java.lang.String" />
+		<property name="time" column="time" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

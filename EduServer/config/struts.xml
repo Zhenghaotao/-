@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 主题 -->
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.action.extension" value="jsp,php,asp,do" />
+	<!-- 开发模式下使用,这样可以打印出更详细的错误信息 -->
+	<constant name="struts.devMode" value="true" />
+	<!--解决乱码    -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	
+	<!-- 未来有空去实现 -->	
+	<package name="admin" extends="struts-default" namespace="/admin">
+	</package>
+	
+	
+	<package name="stu" extends="struts-default" namespace="/stu">
+		<!--  用户的action -->
+		<action name="user_*" class="com.gdufs.edu.action.UserAction" method="{1}"/>
+		
+		<!-- 问题的action -->
+		<action name="question_*" class="com.gdufs.edu.action.QuestionAction" method="{1}"/>
+		
+		<!-- 评论的action -->
+		<action name="comment_*" class="com.gdufs.edu.action.CommentAction" method="{1}"/>
+		
+		<!-- 资源文件的action -->
+		<action name="resfile_*" class="com.gdufs.edu.action.ResfileAction" method="{1}"/>
+		
+	</package>
+</struts>

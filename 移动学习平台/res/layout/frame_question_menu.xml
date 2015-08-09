@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame_bg"
+    android:orientation="vertical" >
+	
+	<include 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:visibility="gone"
+	    layout="@layout/loading_panel"
+	    />
+	<com.gdufs.studyplatform.ui.CustomListView
+	    android:id="@+id/lv_show"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:divider="#00000000"
+	    android:listSelector="#00000000"
+	    android:fadingEdge="none"
+	    android:cacheColorHint="#00000000"
+	    >
+	</com.gdufs.studyplatform.ui.CustomListView>
+	
+	<ImageView
+        android:id="@+id/btn_backTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:src="@drawable/backtop_button" />
+	
+	<include
+	    android:id="@+id/publicCommentView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:visibility="gone"
+	    layout="@layout/publish_comment"
+	    />
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/listview_selector_bg"
+    android:paddingBottom="10.0dip"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingTop="8.0dip"
+    >
+    <RelativeLayout 
+        android:id="@+id/rl_contentView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+        <TextView 
+            android:id="@+id/tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="200dp"
+            android:textColor="@color/theme_text_color"
+            android:textSize="14sp"
+            />
+        <com.gdufs.studyplatform.ui.CustomImageView 
+            android:id="@+id/iv_image"
+            android:layout_below="@id/tv_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:background="@drawable/picture_empty"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_contentView"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        >
+        <TextView
+            android:id="@+id/tv_recount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/comment_count_icon"
+            android:drawablePadding="1.0dip"
+            android:gravity="center"
+            android:textColor="#ffa2abb2"
+            android:textSize="9.0sp" />
+        <TextView
+            android:id="@+id/tv_timeAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_date_time"
+            android:drawablePadding="2.0dip"
+            android:gravity="center"
+            android:textColor="#ffa2abb2"
+            android:textSize="9.0sp" />
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    
+
+</RelativeLayout>

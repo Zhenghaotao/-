@@ -1,0 +1,758 @@
+org.springframework.context.support.AbstractApplicationContext INFO 2015-06-06 15:32:11 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63d4e2ba: startup date [Sat Jun 06 15:32:11 CST 2015]; root of context hierarchy
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO 2015-06-06 15:32:11 - Loading XML bean definitions from class path resource [beans.xml]
+org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider INFO 2015-06-06 15:32:12 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+org.springframework.context.support.AbstractApplicationContext INFO 2015-06-06 15:33:20 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63d4e2ba: startup date [Sat Jun 06 15:33:20 CST 2015]; root of context hierarchy
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO 2015-06-06 15:33:20 - Loading XML bean definitions from class path resource [beans.xml]
+org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider INFO 2015-06-06 15:33:20 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+org.springframework.core.io.support.PropertiesLoaderSupport INFO 2015-06-06 15:33:20 - Loading properties file from class path resource [jdbc.properties]
+org.springframework.beans.factory.support.DefaultListableBeanFactory INFO 2015-06-06 15:33:20 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@23fe1d71: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+com.mchange.v2.log.MLog INFO 2015-06-06 15:33:20 - MLog clients using log4j logging.
+com.mchange.v2.c3p0.C3P0Registry INFO 2015-06-06 15:33:20 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+org.hibernate.cfg.Environment INFO 2015-06-06 15:33:21 - Hibernate 3.5.6-Final
+org.hibernate.cfg.Environment INFO 2015-06-06 15:33:21 - hibernate.properties not found
+org.hibernate.cfg.Environment INFO 2015-06-06 15:33:21 - Bytecode provider name : javassist
+org.hibernate.cfg.Environment INFO 2015-06-06 15:33:21 - using JDK 1.4 java.sql.Timestamp handling
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:33:21 - configuring from url: file:/home/taotao/project/j2ee/demo2/EduServer/build/classes/hibernate.cfg.xml
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:33:21 - Configured SessionFactory: null
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:33:21 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Resfile.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 15:33:21 - Mapping class: com.gdufs.edu.model.Resfile -> resfile
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:33:21 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Question.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 15:33:21 - Mapping class: com.gdufs.edu.model.Question -> question
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:33:21 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Comment.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 15:33:21 - Mapping class: com.gdufs.edu.model.Comment -> comment
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:33:21 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/User.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 15:33:21 - Mapping class: com.gdufs.edu.model.User -> user
+org.springframework.orm.hibernate3.SessionFactoryBuilderSupport INFO 2015-06-06 15:33:21 - Building new Hibernate SessionFactory
+org.hibernate.connection.ConnectionProviderFactory INFO 2015-06-06 15:33:21 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource INFO 2015-06-06 15:33:21 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991jfmnt414utw3n|29176cc1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991jfmnt414utw3n|29176cc1, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:21 - RDBMS: MySQL, version: 5.5.43-0ubuntu0.14.04.1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:21 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+org.hibernate.dialect.Dialect INFO 2015-06-06 15:33:22 - Using dialect: org.hibernate.dialect.MySQL5Dialect
+org.hibernate.engine.jdbc.JdbcSupportLoader INFO 2015-06-06 15:33:22 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+org.hibernate.transaction.TransactionFactoryFactory INFO 2015-06-06 15:33:22 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+org.hibernate.transaction.TransactionManagerLookupFactory INFO 2015-06-06 15:33:22 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Automatic flush during beforeCompletion(): disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - JDBC batch size: 15
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - JDBC batch updates for versioned data: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Scrollable result sets: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Connection release mode: auto
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Maximum outer join fetch depth: 2
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Default batch fetch size: 1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Generate SQL with comments: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Order SQL updates by primary key: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Order SQL inserts for batching: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+org.hibernate.hql.ast.ASTQueryTranslatorFactory INFO 2015-06-06 15:33:22 - Using ASTQueryTranslatorFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Query language substitutions: {}
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - JPA-QL strict compliance: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Second-level cache: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Query cache: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Optimize cache for minimal puts: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Structured second-level cache entries: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Echoing all SQL to stdout
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Statistics: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Default entity-mode: pojo
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Named query checking : enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:33:22 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.impl.SessionFactoryImpl INFO 2015-06-06 15:33:22 - building session factory
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry INFO 2015-06-06 15:33:22 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@23fe1d71: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+org.springframework.context.support.AbstractApplicationContext INFO 2015-06-06 15:35:05 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63d4e2ba: startup date [Sat Jun 06 15:35:05 CST 2015]; root of context hierarchy
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO 2015-06-06 15:35:06 - Loading XML bean definitions from class path resource [beans.xml]
+org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider INFO 2015-06-06 15:35:06 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+org.springframework.core.io.support.PropertiesLoaderSupport INFO 2015-06-06 15:35:06 - Loading properties file from class path resource [jdbc.properties]
+org.springframework.beans.factory.support.DefaultListableBeanFactory INFO 2015-06-06 15:35:06 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@23fe1d71: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+com.mchange.v2.log.MLog INFO 2015-06-06 15:35:06 - MLog clients using log4j logging.
+com.mchange.v2.c3p0.C3P0Registry INFO 2015-06-06 15:35:06 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+org.hibernate.cfg.Environment INFO 2015-06-06 15:35:07 - Hibernate 3.5.6-Final
+org.hibernate.cfg.Environment INFO 2015-06-06 15:35:07 - hibernate.properties not found
+org.hibernate.cfg.Environment INFO 2015-06-06 15:35:07 - Bytecode provider name : javassist
+org.hibernate.cfg.Environment INFO 2015-06-06 15:35:07 - using JDK 1.4 java.sql.Timestamp handling
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:35:07 - configuring from url: file:/home/taotao/project/j2ee/demo2/EduServer/build/classes/hibernate.cfg.xml
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:35:07 - Configured SessionFactory: null
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:35:07 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Resfile.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 15:35:07 - Mapping class: com.gdufs.edu.model.Resfile -> resfile
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:35:07 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Question.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 15:35:07 - Mapping class: com.gdufs.edu.model.Question -> question
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:35:07 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Comment.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 15:35:07 - Mapping class: com.gdufs.edu.model.Comment -> comment
+org.hibernate.cfg.Configuration INFO 2015-06-06 15:35:07 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/User.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 15:35:07 - Mapping class: com.gdufs.edu.model.User -> user
+org.springframework.orm.hibernate3.SessionFactoryBuilderSupport INFO 2015-06-06 15:35:07 - Building new Hibernate SessionFactory
+org.hibernate.connection.ConnectionProviderFactory INFO 2015-06-06 15:35:07 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource INFO 2015-06-06 15:35:07 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991jfoxfr8rbxmf|29176cc1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991jfoxfr8rbxmf|29176cc1, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - RDBMS: MySQL, version: 5.5.43-0ubuntu0.14.04.1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+org.hibernate.dialect.Dialect INFO 2015-06-06 15:35:07 - Using dialect: org.hibernate.dialect.MySQL5Dialect
+org.hibernate.engine.jdbc.JdbcSupportLoader INFO 2015-06-06 15:35:07 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+org.hibernate.transaction.TransactionFactoryFactory INFO 2015-06-06 15:35:07 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+org.hibernate.transaction.TransactionManagerLookupFactory INFO 2015-06-06 15:35:07 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Automatic flush during beforeCompletion(): disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - JDBC batch size: 15
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - JDBC batch updates for versioned data: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Scrollable result sets: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Connection release mode: auto
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Maximum outer join fetch depth: 2
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Default batch fetch size: 1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Generate SQL with comments: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Order SQL updates by primary key: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Order SQL inserts for batching: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+org.hibernate.hql.ast.ASTQueryTranslatorFactory INFO 2015-06-06 15:35:07 - Using ASTQueryTranslatorFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Query language substitutions: {}
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - JPA-QL strict compliance: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Second-level cache: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Query cache: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Optimize cache for minimal puts: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Structured second-level cache entries: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Echoing all SQL to stdout
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Statistics: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Default entity-mode: pojo
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Named query checking : enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 15:35:07 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.impl.SessionFactoryImpl INFO 2015-06-06 15:35:07 - building session factory
+org.hibernate.impl.SessionFactoryObjectFactory INFO 2015-06-06 15:35:08 - Not binding factory to JNDI, no JNDI name configured
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 15:35:08 - Running hbm2ddl schema update
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 15:35:08 - fetching database metadata
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 15:35:08 - updating schema
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-06 15:35:08 - table not found: comment
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-06 15:35:08 - table not found: question
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-06 15:35:08 - table not found: resfile
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-06 15:35:08 - table not found: user
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-06 15:35:08 - table not found: comment
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-06 15:35:08 - table not found: question
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-06 15:35:08 - table not found: resfile
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-06 15:35:08 - table not found: user
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 15:35:08 - schema update complete
+org.springframework.orm.hibernate3.HibernateTransactionManager INFO 2015-06-06 15:35:08 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991jfoxfr8rbxmf|29176cc1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991jfoxfr8rbxmf|29176cc1, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+org.springframework.context.support.AbstractApplicationContext INFO 2015-06-06 16:36:42 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63d4e2ba: startup date [Sat Jun 06 16:36:42 CST 2015]; root of context hierarchy
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO 2015-06-06 16:36:42 - Loading XML bean definitions from class path resource [beans.xml]
+org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider INFO 2015-06-06 16:36:42 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+org.springframework.core.io.support.PropertiesLoaderSupport INFO 2015-06-06 16:36:43 - Loading properties file from class path resource [jdbc.properties]
+org.springframework.beans.factory.support.DefaultListableBeanFactory INFO 2015-06-06 16:36:43 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@27d415d9: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,questionDao,resfileDao,commentDao,userDao,commentService,questionService,userService,resfileService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+com.mchange.v2.log.MLog INFO 2015-06-06 16:36:43 - MLog clients using log4j logging.
+com.mchange.v2.c3p0.C3P0Registry INFO 2015-06-06 16:36:43 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+org.hibernate.cfg.Environment INFO 2015-06-06 16:36:43 - Hibernate 3.5.6-Final
+org.hibernate.cfg.Environment INFO 2015-06-06 16:36:43 - hibernate.properties not found
+org.hibernate.cfg.Environment INFO 2015-06-06 16:36:43 - Bytecode provider name : javassist
+org.hibernate.cfg.Environment INFO 2015-06-06 16:36:43 - using JDK 1.4 java.sql.Timestamp handling
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:36:43 - configuring from url: file:/home/taotao/project/j2ee/demo2/EduServer/build/classes/hibernate.cfg.xml
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:36:43 - Configured SessionFactory: null
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:36:43 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Resfile.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:36:43 - Mapping class: com.gdufs.edu.model.Resfile -> resfile
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:36:44 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Question.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:36:44 - Mapping class: com.gdufs.edu.model.Question -> question
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:36:44 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Comment.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:36:44 - Mapping class: com.gdufs.edu.model.Comment -> comment
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:36:44 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/User.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:36:44 - Mapping class: com.gdufs.edu.model.User -> user
+org.springframework.orm.hibernate3.SessionFactoryBuilderSupport INFO 2015-06-06 16:36:44 - Building new Hibernate SessionFactory
+org.hibernate.connection.ConnectionProviderFactory INFO 2015-06-06 16:36:44 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource INFO 2015-06-06 16:36:44 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991jhw5vu1haj621|1725dc0f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991jhw5vu1haj621|1725dc0f, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - RDBMS: MySQL, version: 5.5.43-0ubuntu0.14.04.1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+org.hibernate.dialect.Dialect INFO 2015-06-06 16:36:44 - Using dialect: org.hibernate.dialect.MySQL5Dialect
+org.hibernate.engine.jdbc.JdbcSupportLoader INFO 2015-06-06 16:36:44 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+org.hibernate.transaction.TransactionFactoryFactory INFO 2015-06-06 16:36:44 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+org.hibernate.transaction.TransactionManagerLookupFactory INFO 2015-06-06 16:36:44 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Automatic flush during beforeCompletion(): disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - JDBC batch size: 15
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - JDBC batch updates for versioned data: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Scrollable result sets: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Connection release mode: auto
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Maximum outer join fetch depth: 2
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Default batch fetch size: 1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Generate SQL with comments: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Order SQL updates by primary key: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Order SQL inserts for batching: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+org.hibernate.hql.ast.ASTQueryTranslatorFactory INFO 2015-06-06 16:36:44 - Using ASTQueryTranslatorFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Query language substitutions: {}
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - JPA-QL strict compliance: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Second-level cache: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Query cache: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Optimize cache for minimal puts: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Structured second-level cache entries: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Echoing all SQL to stdout
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Statistics: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Default entity-mode: pojo
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Named query checking : enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:36:44 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.impl.SessionFactoryImpl INFO 2015-06-06 16:36:44 - building session factory
+org.hibernate.impl.SessionFactoryObjectFactory INFO 2015-06-06 16:36:44 - Not binding factory to JNDI, no JNDI name configured
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:36:44 - Running hbm2ddl schema update
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:36:44 - fetching database metadata
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:36:44 - updating schema
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - table found: EduServer.comment
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - columns: [questionid, nickname, rank, id, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - table found: EduServer.question
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - columns: [filetype, file, lastretime, id, recount, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - table found: EduServer.resfile
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - columns: [filename, nickname, id, time, url]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - table found: EduServer.user
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - columns: [createtime, nickname, imei, id, uploadcount]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:36:44 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:36:44 - schema update complete
+org.springframework.orm.hibernate3.HibernateTransactionManager INFO 2015-06-06 16:36:45 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991jhw5vu1haj621|1725dc0f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991jhw5vu1haj621|1725dc0f, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+org.springframework.context.support.AbstractApplicationContext INFO 2015-06-06 16:38:35 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63d4e2ba: startup date [Sat Jun 06 16:38:35 CST 2015]; root of context hierarchy
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO 2015-06-06 16:38:35 - Loading XML bean definitions from class path resource [beans.xml]
+org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider INFO 2015-06-06 16:38:35 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+org.springframework.core.io.support.PropertiesLoaderSupport INFO 2015-06-06 16:38:35 - Loading properties file from class path resource [jdbc.properties]
+org.springframework.beans.factory.support.DefaultListableBeanFactory INFO 2015-06-06 16:38:35 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@27d415d9: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,questionDao,resfileDao,commentDao,userDao,commentService,questionService,userService,resfileService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+com.mchange.v2.log.MLog INFO 2015-06-06 16:38:36 - MLog clients using log4j logging.
+com.mchange.v2.c3p0.C3P0Registry INFO 2015-06-06 16:38:36 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+org.hibernate.cfg.Environment INFO 2015-06-06 16:38:36 - Hibernate 3.5.6-Final
+org.hibernate.cfg.Environment INFO 2015-06-06 16:38:36 - hibernate.properties not found
+org.hibernate.cfg.Environment INFO 2015-06-06 16:38:36 - Bytecode provider name : javassist
+org.hibernate.cfg.Environment INFO 2015-06-06 16:38:36 - using JDK 1.4 java.sql.Timestamp handling
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:38:36 - configuring from url: file:/home/taotao/project/j2ee/demo2/EduServer/build/classes/hibernate.cfg.xml
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:38:36 - Configured SessionFactory: null
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:38:36 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Resfile.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:38:36 - Mapping class: com.gdufs.edu.model.Resfile -> resfile
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:38:36 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Question.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:38:36 - Mapping class: com.gdufs.edu.model.Question -> question
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:38:36 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Comment.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:38:36 - Mapping class: com.gdufs.edu.model.Comment -> comment
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:38:36 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/User.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:38:36 - Mapping class: com.gdufs.edu.model.User -> user
+org.springframework.orm.hibernate3.SessionFactoryBuilderSupport INFO 2015-06-06 16:38:36 - Building new Hibernate SessionFactory
+org.hibernate.connection.ConnectionProviderFactory INFO 2015-06-06 16:38:36 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource INFO 2015-06-06 16:38:36 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991jhykwcdrp7n2|1725dc0f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991jhykwcdrp7n2|1725dc0f, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - RDBMS: MySQL, version: 5.5.43-0ubuntu0.14.04.1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+org.hibernate.dialect.Dialect INFO 2015-06-06 16:38:37 - Using dialect: org.hibernate.dialect.MySQL5Dialect
+org.hibernate.engine.jdbc.JdbcSupportLoader INFO 2015-06-06 16:38:37 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+org.hibernate.transaction.TransactionFactoryFactory INFO 2015-06-06 16:38:37 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+org.hibernate.transaction.TransactionManagerLookupFactory INFO 2015-06-06 16:38:37 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Automatic flush during beforeCompletion(): disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - JDBC batch size: 15
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - JDBC batch updates for versioned data: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Scrollable result sets: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Connection release mode: auto
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Maximum outer join fetch depth: 2
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Default batch fetch size: 1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Generate SQL with comments: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Order SQL updates by primary key: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Order SQL inserts for batching: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+org.hibernate.hql.ast.ASTQueryTranslatorFactory INFO 2015-06-06 16:38:37 - Using ASTQueryTranslatorFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Query language substitutions: {}
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - JPA-QL strict compliance: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Second-level cache: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Query cache: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Optimize cache for minimal puts: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Structured second-level cache entries: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Echoing all SQL to stdout
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Statistics: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Default entity-mode: pojo
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Named query checking : enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:38:37 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.impl.SessionFactoryImpl INFO 2015-06-06 16:38:37 - building session factory
+org.hibernate.impl.SessionFactoryObjectFactory INFO 2015-06-06 16:38:37 - Not binding factory to JNDI, no JNDI name configured
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:38:37 - Running hbm2ddl schema update
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:38:37 - fetching database metadata
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:38:37 - updating schema
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - table found: EduServer.comment
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - columns: [questionid, nickname, rank, id, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - table found: EduServer.question
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - columns: [filetype, file, lastretime, id, recount, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - table found: EduServer.resfile
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - columns: [filename, nickname, id, time, url]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - table found: EduServer.user
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - columns: [createtime, nickname, imei, id, uploadcount]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:38:37 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:38:37 - schema update complete
+org.springframework.orm.hibernate3.HibernateTransactionManager INFO 2015-06-06 16:38:37 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991jhykwcdrp7n2|1725dc0f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991jhykwcdrp7n2|1725dc0f, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+org.springframework.context.support.AbstractApplicationContext INFO 2015-06-06 16:39:42 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63d4e2ba: startup date [Sat Jun 06 16:39:42 CST 2015]; root of context hierarchy
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO 2015-06-06 16:39:42 - Loading XML bean definitions from class path resource [beans.xml]
+org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider INFO 2015-06-06 16:39:42 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+org.springframework.core.io.support.PropertiesLoaderSupport INFO 2015-06-06 16:39:43 - Loading properties file from class path resource [jdbc.properties]
+org.springframework.beans.factory.support.DefaultListableBeanFactory INFO 2015-06-06 16:39:43 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@27d415d9: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,questionDao,resfileDao,commentDao,userDao,commentService,questionService,userService,resfileService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+com.mchange.v2.log.MLog INFO 2015-06-06 16:39:43 - MLog clients using log4j logging.
+com.mchange.v2.c3p0.C3P0Registry INFO 2015-06-06 16:39:43 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+org.hibernate.cfg.Environment INFO 2015-06-06 16:39:43 - Hibernate 3.5.6-Final
+org.hibernate.cfg.Environment INFO 2015-06-06 16:39:43 - hibernate.properties not found
+org.hibernate.cfg.Environment INFO 2015-06-06 16:39:43 - Bytecode provider name : javassist
+org.hibernate.cfg.Environment INFO 2015-06-06 16:39:43 - using JDK 1.4 java.sql.Timestamp handling
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:39:43 - configuring from url: file:/home/taotao/project/j2ee/demo2/EduServer/build/classes/hibernate.cfg.xml
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:39:43 - Configured SessionFactory: null
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:39:43 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Resfile.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:39:44 - Mapping class: com.gdufs.edu.model.Resfile -> resfile
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:39:44 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Question.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:39:44 - Mapping class: com.gdufs.edu.model.Question -> question
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:39:44 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Comment.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:39:44 - Mapping class: com.gdufs.edu.model.Comment -> comment
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:39:44 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/User.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:39:44 - Mapping class: com.gdufs.edu.model.User -> user
+org.springframework.orm.hibernate3.SessionFactoryBuilderSupport INFO 2015-06-06 16:39:44 - Building new Hibernate SessionFactory
+org.hibernate.connection.ConnectionProviderFactory INFO 2015-06-06 16:39:44 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource INFO 2015-06-06 16:39:44 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991ji00siqiskkk|1725dc0f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991ji00siqiskkk|1725dc0f, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - RDBMS: MySQL, version: 5.5.43-0ubuntu0.14.04.1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+org.hibernate.dialect.Dialect INFO 2015-06-06 16:39:44 - Using dialect: org.hibernate.dialect.MySQL5Dialect
+org.hibernate.engine.jdbc.JdbcSupportLoader INFO 2015-06-06 16:39:44 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+org.hibernate.transaction.TransactionFactoryFactory INFO 2015-06-06 16:39:44 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+org.hibernate.transaction.TransactionManagerLookupFactory INFO 2015-06-06 16:39:44 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Automatic flush during beforeCompletion(): disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - JDBC batch size: 15
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - JDBC batch updates for versioned data: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Scrollable result sets: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Connection release mode: auto
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Maximum outer join fetch depth: 2
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Default batch fetch size: 1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Generate SQL with comments: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Order SQL updates by primary key: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Order SQL inserts for batching: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+org.hibernate.hql.ast.ASTQueryTranslatorFactory INFO 2015-06-06 16:39:44 - Using ASTQueryTranslatorFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Query language substitutions: {}
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - JPA-QL strict compliance: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Second-level cache: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Query cache: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Optimize cache for minimal puts: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Structured second-level cache entries: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Echoing all SQL to stdout
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Statistics: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Default entity-mode: pojo
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Named query checking : enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:39:44 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.impl.SessionFactoryImpl INFO 2015-06-06 16:39:44 - building session factory
+org.hibernate.impl.SessionFactoryObjectFactory INFO 2015-06-06 16:39:44 - Not binding factory to JNDI, no JNDI name configured
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:39:44 - Running hbm2ddl schema update
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:39:44 - fetching database metadata
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:39:44 - updating schema
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - table found: EduServer.comment
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - columns: [questionid, nickname, rank, id, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - table found: EduServer.question
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - columns: [filetype, file, lastretime, id, recount, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - table found: EduServer.resfile
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - columns: [filename, nickname, id, time, url]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - table found: EduServer.user
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - columns: [createtime, nickname, imei, id, uploadcount]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:39:44 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:39:44 - schema update complete
+org.springframework.orm.hibernate3.HibernateTransactionManager INFO 2015-06-06 16:39:44 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991ji00siqiskkk|1725dc0f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991ji00siqiskkk|1725dc0f, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+org.springframework.context.support.AbstractApplicationContext INFO 2015-06-06 16:42:17 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63d4e2ba: startup date [Sat Jun 06 16:42:17 CST 2015]; root of context hierarchy
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO 2015-06-06 16:42:17 - Loading XML bean definitions from class path resource [beans.xml]
+org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider INFO 2015-06-06 16:42:18 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+org.springframework.core.io.support.PropertiesLoaderSupport INFO 2015-06-06 16:42:18 - Loading properties file from class path resource [jdbc.properties]
+org.springframework.beans.factory.support.DefaultListableBeanFactory INFO 2015-06-06 16:42:18 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@27d415d9: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,questionDao,resfileDao,commentDao,userDao,commentService,questionService,userService,resfileService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+com.mchange.v2.log.MLog INFO 2015-06-06 16:42:18 - MLog clients using log4j logging.
+com.mchange.v2.c3p0.C3P0Registry INFO 2015-06-06 16:42:18 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+org.hibernate.cfg.Environment INFO 2015-06-06 16:42:19 - Hibernate 3.5.6-Final
+org.hibernate.cfg.Environment INFO 2015-06-06 16:42:19 - hibernate.properties not found
+org.hibernate.cfg.Environment INFO 2015-06-06 16:42:19 - Bytecode provider name : javassist
+org.hibernate.cfg.Environment INFO 2015-06-06 16:42:19 - using JDK 1.4 java.sql.Timestamp handling
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:42:19 - configuring from url: file:/home/taotao/project/j2ee/demo2/EduServer/build/classes/hibernate.cfg.xml
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:42:19 - Configured SessionFactory: null
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:42:19 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Resfile.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:42:19 - Mapping class: com.gdufs.edu.model.Resfile -> resfile
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:42:19 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Question.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:42:19 - Mapping class: com.gdufs.edu.model.Question -> question
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:42:19 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Comment.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:42:19 - Mapping class: com.gdufs.edu.model.Comment -> comment
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:42:19 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/User.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:42:19 - Mapping class: com.gdufs.edu.model.User -> user
+org.springframework.orm.hibernate3.SessionFactoryBuilderSupport INFO 2015-06-06 16:42:19 - Building new Hibernate SessionFactory
+org.hibernate.connection.ConnectionProviderFactory INFO 2015-06-06 16:42:19 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource INFO 2015-06-06 16:42:19 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991ji3ckly2qmes|1725dc0f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991ji3ckly2qmes|1725dc0f, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - RDBMS: MySQL, version: 5.5.43-0ubuntu0.14.04.1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+org.hibernate.dialect.Dialect INFO 2015-06-06 16:42:19 - Using dialect: org.hibernate.dialect.MySQL5Dialect
+org.hibernate.engine.jdbc.JdbcSupportLoader INFO 2015-06-06 16:42:19 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+org.hibernate.transaction.TransactionFactoryFactory INFO 2015-06-06 16:42:19 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+org.hibernate.transaction.TransactionManagerLookupFactory INFO 2015-06-06 16:42:19 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Automatic flush during beforeCompletion(): disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - JDBC batch size: 15
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - JDBC batch updates for versioned data: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Scrollable result sets: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Connection release mode: auto
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Maximum outer join fetch depth: 2
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Default batch fetch size: 1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Generate SQL with comments: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Order SQL updates by primary key: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Order SQL inserts for batching: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+org.hibernate.hql.ast.ASTQueryTranslatorFactory INFO 2015-06-06 16:42:19 - Using ASTQueryTranslatorFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Query language substitutions: {}
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - JPA-QL strict compliance: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Second-level cache: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Query cache: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Optimize cache for minimal puts: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Structured second-level cache entries: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Echoing all SQL to stdout
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Statistics: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Default entity-mode: pojo
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Named query checking : enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:42:19 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.impl.SessionFactoryImpl INFO 2015-06-06 16:42:19 - building session factory
+org.hibernate.impl.SessionFactoryObjectFactory INFO 2015-06-06 16:42:20 - Not binding factory to JNDI, no JNDI name configured
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:42:20 - Running hbm2ddl schema update
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:42:20 - fetching database metadata
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:42:20 - updating schema
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - table found: EduServer.comment
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - columns: [questionid, nickname, rank, id, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - table found: EduServer.question
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - columns: [filetype, file, lastretime, id, recount, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - table found: EduServer.resfile
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - columns: [filename, nickname, id, time, url]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - table found: EduServer.user
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - columns: [createtime, nickname, imei, id, uploadcount]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:42:20 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:42:20 - schema update complete
+org.springframework.orm.hibernate3.HibernateTransactionManager INFO 2015-06-06 16:42:20 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991ji3ckly2qmes|1725dc0f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991ji3ckly2qmes|1725dc0f, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+org.springframework.context.support.AbstractApplicationContext INFO 2015-06-06 16:43:50 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4b6995df: startup date [Sat Jun 06 16:43:50 CST 2015]; root of context hierarchy
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO 2015-06-06 16:43:50 - Loading XML bean definitions from class path resource [beans.xml]
+org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider INFO 2015-06-06 16:43:51 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+org.springframework.core.io.support.PropertiesLoaderSupport INFO 2015-06-06 16:43:51 - Loading properties file from class path resource [jdbc.properties]
+org.springframework.beans.factory.support.DefaultListableBeanFactory INFO 2015-06-06 16:43:51 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@727803de: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,questionDao,resfileDao,commentDao,userDao,commentService,questionService,userService,resfileService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+com.mchange.v2.log.MLog INFO 2015-06-06 16:43:51 - MLog clients using log4j logging.
+com.mchange.v2.c3p0.C3P0Registry INFO 2015-06-06 16:43:51 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+org.hibernate.cfg.Environment INFO 2015-06-06 16:43:51 - Hibernate 3.5.6-Final
+org.hibernate.cfg.Environment INFO 2015-06-06 16:43:51 - hibernate.properties not found
+org.hibernate.cfg.Environment INFO 2015-06-06 16:43:51 - Bytecode provider name : javassist
+org.hibernate.cfg.Environment INFO 2015-06-06 16:43:51 - using JDK 1.4 java.sql.Timestamp handling
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:43:51 - configuring from url: file:/home/taotao/project/j2ee/demo2/EduServer/build/classes/hibernate.cfg.xml
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:43:52 - Configured SessionFactory: null
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:43:52 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Resfile.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:43:52 - Mapping class: com.gdufs.edu.model.Resfile -> resfile
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:43:52 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Question.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:43:52 - Mapping class: com.gdufs.edu.model.Question -> question
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:43:52 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Comment.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:43:52 - Mapping class: com.gdufs.edu.model.Comment -> comment
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:43:52 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/User.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:43:52 - Mapping class: com.gdufs.edu.model.User -> user
+org.springframework.orm.hibernate3.SessionFactoryBuilderSupport INFO 2015-06-06 16:43:52 - Building new Hibernate SessionFactory
+org.hibernate.connection.ConnectionProviderFactory INFO 2015-06-06 16:43:52 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource INFO 2015-06-06 16:43:52 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991ji5c7w1azrzvy|3f197a46, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991ji5c7w1azrzvy|3f197a46, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - RDBMS: MySQL, version: 5.5.43-0ubuntu0.14.04.1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+org.hibernate.dialect.Dialect INFO 2015-06-06 16:43:52 - Using dialect: org.hibernate.dialect.MySQL5Dialect
+org.hibernate.engine.jdbc.JdbcSupportLoader INFO 2015-06-06 16:43:52 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+org.hibernate.transaction.TransactionFactoryFactory INFO 2015-06-06 16:43:52 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+org.hibernate.transaction.TransactionManagerLookupFactory INFO 2015-06-06 16:43:52 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Automatic flush during beforeCompletion(): disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - JDBC batch size: 15
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - JDBC batch updates for versioned data: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Scrollable result sets: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Connection release mode: auto
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Maximum outer join fetch depth: 2
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Default batch fetch size: 1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Generate SQL with comments: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Order SQL updates by primary key: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Order SQL inserts for batching: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+org.hibernate.hql.ast.ASTQueryTranslatorFactory INFO 2015-06-06 16:43:52 - Using ASTQueryTranslatorFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Query language substitutions: {}
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - JPA-QL strict compliance: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Second-level cache: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Query cache: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Optimize cache for minimal puts: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Structured second-level cache entries: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Echoing all SQL to stdout
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Statistics: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Default entity-mode: pojo
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Named query checking : enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:43:52 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.impl.SessionFactoryImpl INFO 2015-06-06 16:43:52 - building session factory
+org.hibernate.impl.SessionFactoryObjectFactory INFO 2015-06-06 16:43:52 - Not binding factory to JNDI, no JNDI name configured
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:43:52 - Running hbm2ddl schema update
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:43:52 - fetching database metadata
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:43:52 - updating schema
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - table found: EduServer.comment
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - columns: [questionid, nickname, rank, id, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - table found: EduServer.question
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - columns: [filetype, file, lastretime, id, recount, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - table found: EduServer.resfile
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - columns: [filename, nickname, id, time, url]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - table found: EduServer.user
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - columns: [createtime, nickname, imei, id, uploadcount]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:43:52 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:43:52 - schema update complete
+org.springframework.orm.hibernate3.HibernateTransactionManager INFO 2015-06-06 16:43:52 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991ji5c7w1azrzvy|3f197a46, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991ji5c7w1azrzvy|3f197a46, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+org.springframework.context.support.AbstractApplicationContext INFO 2015-06-06 16:52:29 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4b6995df: startup date [Sat Jun 06 16:52:29 CST 2015]; root of context hierarchy
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO 2015-06-06 16:52:29 - Loading XML bean definitions from class path resource [beans.xml]
+org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider INFO 2015-06-06 16:52:29 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+org.springframework.core.io.support.PropertiesLoaderSupport INFO 2015-06-06 16:52:29 - Loading properties file from class path resource [jdbc.properties]
+org.springframework.beans.factory.support.DefaultListableBeanFactory INFO 2015-06-06 16:52:29 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@727803de: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,questionDao,resfileDao,commentDao,userDao,commentService,questionService,userService,resfileService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+com.mchange.v2.log.MLog INFO 2015-06-06 16:52:30 - MLog clients using log4j logging.
+com.mchange.v2.c3p0.C3P0Registry INFO 2015-06-06 16:52:30 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+org.hibernate.cfg.Environment INFO 2015-06-06 16:52:30 - Hibernate 3.5.6-Final
+org.hibernate.cfg.Environment INFO 2015-06-06 16:52:30 - hibernate.properties not found
+org.hibernate.cfg.Environment INFO 2015-06-06 16:52:30 - Bytecode provider name : javassist
+org.hibernate.cfg.Environment INFO 2015-06-06 16:52:30 - using JDK 1.4 java.sql.Timestamp handling
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:52:30 - configuring from url: file:/home/taotao/project/j2ee/demo2/EduServer/build/classes/hibernate.cfg.xml
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:52:30 - Configured SessionFactory: null
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:52:30 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Resfile.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:52:30 - Mapping class: com.gdufs.edu.model.Resfile -> resfile
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:52:30 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Question.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:52:30 - Mapping class: com.gdufs.edu.model.Question -> question
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:52:30 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Comment.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:52:30 - Mapping class: com.gdufs.edu.model.Comment -> comment
+org.hibernate.cfg.Configuration INFO 2015-06-06 16:52:30 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/User.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-06 16:52:30 - Mapping class: com.gdufs.edu.model.User -> user
+org.springframework.orm.hibernate3.SessionFactoryBuilderSupport INFO 2015-06-06 16:52:30 - Building new Hibernate SessionFactory
+org.hibernate.connection.ConnectionProviderFactory INFO 2015-06-06 16:52:30 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource INFO 2015-06-06 16:52:30 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991jigge5hx81mc|3f197a46, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991jigge5hx81mc|3f197a46, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - RDBMS: MySQL, version: 5.5.43-0ubuntu0.14.04.1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+org.hibernate.dialect.Dialect INFO 2015-06-06 16:52:31 - Using dialect: org.hibernate.dialect.MySQL5Dialect
+org.hibernate.engine.jdbc.JdbcSupportLoader INFO 2015-06-06 16:52:31 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+org.hibernate.transaction.TransactionFactoryFactory INFO 2015-06-06 16:52:31 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+org.hibernate.transaction.TransactionManagerLookupFactory INFO 2015-06-06 16:52:31 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Automatic flush during beforeCompletion(): disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - JDBC batch size: 15
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - JDBC batch updates for versioned data: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Scrollable result sets: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Connection release mode: auto
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Maximum outer join fetch depth: 2
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Default batch fetch size: 1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Generate SQL with comments: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Order SQL updates by primary key: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Order SQL inserts for batching: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+org.hibernate.hql.ast.ASTQueryTranslatorFactory INFO 2015-06-06 16:52:31 - Using ASTQueryTranslatorFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Query language substitutions: {}
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - JPA-QL strict compliance: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Second-level cache: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Query cache: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Optimize cache for minimal puts: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Structured second-level cache entries: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Echoing all SQL to stdout
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Statistics: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Default entity-mode: pojo
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Named query checking : enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-06 16:52:31 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.impl.SessionFactoryImpl INFO 2015-06-06 16:52:31 - building session factory
+org.hibernate.impl.SessionFactoryObjectFactory INFO 2015-06-06 16:52:31 - Not binding factory to JNDI, no JNDI name configured
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:52:31 - Running hbm2ddl schema update
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:52:31 - fetching database metadata
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:52:31 - updating schema
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - table found: EduServer.comment
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - columns: [questionid, nickname, rank, id, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - table found: EduServer.question
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - columns: [filetype, file, lastretime, id, recount, userid, content, timestamp]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - table found: EduServer.resfile
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - columns: [filename, nickname, id, time, url]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - table found: EduServer.user
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - columns: [createtime, nickname, imei, id, uploadcount]
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - foreign keys: []
+org.hibernate.tool.hbm2ddl.TableMetadata INFO 2015-06-06 16:52:31 - indexes: [primary]
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-06 16:52:31 - schema update complete
+org.springframework.orm.hibernate3.HibernateTransactionManager INFO 2015-06-06 16:52:31 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991jigge5hx81mc|3f197a46, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991jigge5hx81mc|3f197a46, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+org.springframework.context.support.AbstractApplicationContext INFO 2015-06-07 23:48:45 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33a10788: startup date [Sun Jun 07 23:48:45 CST 2015]; root of context hierarchy
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO 2015-06-07 23:48:45 - Loading XML bean definitions from class path resource [beans.xml]
+org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider INFO 2015-06-07 23:48:45 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+org.springframework.core.io.support.PropertiesLoaderSupport INFO 2015-06-07 23:48:46 - Loading properties file from class path resource [jdbc.properties]
+org.springframework.beans.factory.support.DefaultListableBeanFactory INFO 2015-06-07 23:48:46 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a36aefa: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,commentAction,userAction,questionAction,resfileAction,questionDao,resfileDao,commentDao,userDao,commentService,questionService,userService,resfileService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+com.mchange.v2.log.MLog INFO 2015-06-07 23:48:46 - MLog clients using log4j logging.
+com.mchange.v2.c3p0.C3P0Registry INFO 2015-06-07 23:48:46 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+org.hibernate.cfg.Environment INFO 2015-06-07 23:48:47 - Hibernate 3.5.6-Final
+org.hibernate.cfg.Environment INFO 2015-06-07 23:48:47 - hibernate.properties not found
+org.hibernate.cfg.Environment INFO 2015-06-07 23:48:47 - Bytecode provider name : javassist
+org.hibernate.cfg.Environment INFO 2015-06-07 23:48:47 - using JDK 1.4 java.sql.Timestamp handling
+org.hibernate.cfg.Configuration INFO 2015-06-07 23:48:47 - configuring from url: file:/home/taotao/project/j2ee/demo2/EduServer/build/classes/hibernate.cfg.xml
+org.hibernate.cfg.Configuration INFO 2015-06-07 23:48:47 - Configured SessionFactory: null
+org.hibernate.cfg.Configuration INFO 2015-06-07 23:48:47 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Resfile.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-07 23:48:47 - Mapping class: com.gdufs.edu.model.Resfile -> resfile
+org.hibernate.cfg.Configuration INFO 2015-06-07 23:48:47 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Question.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-07 23:48:47 - Mapping class: com.gdufs.edu.model.Question -> question
+org.hibernate.cfg.Configuration INFO 2015-06-07 23:48:47 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Comment.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-07 23:48:47 - Mapping class: com.gdufs.edu.model.Comment -> comment
+org.hibernate.cfg.Configuration INFO 2015-06-07 23:48:47 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/User.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-07 23:48:47 - Mapping class: com.gdufs.edu.model.User -> user
+org.springframework.orm.hibernate3.SessionFactoryBuilderSupport INFO 2015-06-07 23:48:47 - Building new Hibernate SessionFactory
+org.hibernate.connection.ConnectionProviderFactory INFO 2015-06-07 23:48:47 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource INFO 2015-06-07 23:48:47 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991lcrmut1dywuxr|123ef382, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991lcrmut1dywuxr|123ef382, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - RDBMS: MySQL, version: 5.5.43-0ubuntu0.14.04.1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+org.hibernate.dialect.Dialect INFO 2015-06-07 23:48:47 - Using dialect: org.hibernate.dialect.MySQL5Dialect
+org.hibernate.engine.jdbc.JdbcSupportLoader INFO 2015-06-07 23:48:47 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+org.hibernate.transaction.TransactionFactoryFactory INFO 2015-06-07 23:48:47 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+org.hibernate.transaction.TransactionManagerLookupFactory INFO 2015-06-07 23:48:47 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Automatic flush during beforeCompletion(): disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - JDBC batch size: 15
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - JDBC batch updates for versioned data: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Scrollable result sets: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Connection release mode: auto
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Maximum outer join fetch depth: 2
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Default batch fetch size: 1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Generate SQL with comments: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Order SQL updates by primary key: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Order SQL inserts for batching: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+org.hibernate.hql.ast.ASTQueryTranslatorFactory INFO 2015-06-07 23:48:47 - Using ASTQueryTranslatorFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Query language substitutions: {}
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - JPA-QL strict compliance: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Second-level cache: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Query cache: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Optimize cache for minimal puts: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Structured second-level cache entries: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Echoing all SQL to stdout
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Statistics: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Default entity-mode: pojo
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Named query checking : enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-07 23:48:47 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.impl.SessionFactoryImpl INFO 2015-06-07 23:48:48 - building session factory
+org.hibernate.impl.SessionFactoryObjectFactory INFO 2015-06-07 23:48:48 - Not binding factory to JNDI, no JNDI name configured
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-07 23:48:48 - Running hbm2ddl schema update
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-07 23:48:48 - fetching database metadata
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-07 23:48:48 - updating schema
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-07 23:48:48 - table not found: comment
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-07 23:48:48 - table not found: question
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-07 23:48:48 - table not found: resfile
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-07 23:48:48 - table not found: user
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-07 23:48:48 - table not found: comment
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-07 23:48:48 - table not found: question
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-07 23:48:48 - table not found: resfile
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-07 23:48:48 - table not found: user
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-07 23:48:48 - schema update complete
+org.springframework.orm.hibernate3.HibernateTransactionManager INFO 2015-06-07 23:48:48 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx991lcrmut1dywuxr|123ef382, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx991lcrmut1dywuxr|123ef382, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+org.springframework.context.support.AbstractApplicationContext INFO 2015-06-25 12:14:03 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@34033bd0: startup date [Thu Jun 25 12:14:03 CST 2015]; root of context hierarchy
+org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO 2015-06-25 12:14:03 - Loading XML bean definitions from class path resource [beans.xml]
+org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider INFO 2015-06-25 12:14:03 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+org.springframework.core.io.support.PropertiesLoaderSupport INFO 2015-06-25 12:14:04 - Loading properties file from class path resource [jdbc.properties]
+org.springframework.beans.factory.support.DefaultListableBeanFactory INFO 2015-06-25 12:14:04 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b3d7190: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,commentAction,userAction,questionAction,resfileAction,questionDao,resfileDao,commentDao,userDao,commentService,questionService,userService,resfileService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+com.mchange.v2.log.MLog INFO 2015-06-25 12:14:04 - MLog clients using log4j logging.
+com.mchange.v2.c3p0.C3P0Registry INFO 2015-06-25 12:14:04 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+org.hibernate.cfg.Environment INFO 2015-06-25 12:14:04 - Hibernate 3.5.6-Final
+org.hibernate.cfg.Environment INFO 2015-06-25 12:14:04 - hibernate.properties not found
+org.hibernate.cfg.Environment INFO 2015-06-25 12:14:04 - Bytecode provider name : javassist
+org.hibernate.cfg.Environment INFO 2015-06-25 12:14:04 - using JDK 1.4 java.sql.Timestamp handling
+org.hibernate.cfg.Configuration INFO 2015-06-25 12:14:04 - configuring from url: file:/home/taotao/project/j2ee/demo2/EduServer/build/classes/hibernate.cfg.xml
+org.hibernate.cfg.Configuration INFO 2015-06-25 12:14:04 - Configured SessionFactory: null
+org.hibernate.cfg.Configuration INFO 2015-06-25 12:14:04 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Resfile.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-25 12:14:04 - Mapping class: com.gdufs.edu.model.ResFile -> resfile
+org.hibernate.cfg.Configuration INFO 2015-06-25 12:14:04 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Question.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-25 12:14:04 - Mapping class: com.gdufs.edu.model.Question -> question
+org.hibernate.cfg.Configuration INFO 2015-06-25 12:14:04 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/Comment.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-25 12:14:04 - Mapping class: com.gdufs.edu.model.Comment -> comment
+org.hibernate.cfg.Configuration INFO 2015-06-25 12:14:04 - Reading mappings from file: /home/taotao/project/j2ee/demo2/EduServer/build/classes/com/gdufs/edu/model/User.hbm.xml
+org.hibernate.cfg.HbmBinder INFO 2015-06-25 12:14:04 - Mapping class: com.gdufs.edu.model.User -> user
+org.springframework.orm.hibernate3.SessionFactoryBuilderSupport INFO 2015-06-25 12:14:04 - Building new Hibernate SessionFactory
+org.hibernate.connection.ConnectionProviderFactory INFO 2015-06-25 12:14:05 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource INFO 2015-06-25 12:14:05 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx9abcrisa1kkmppj|384ad17b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx9abcrisa1kkmppj|384ad17b, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - RDBMS: MySQL, version: 5.5.43-0ubuntu0.14.04.1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+org.hibernate.dialect.Dialect INFO 2015-06-25 12:14:05 - Using dialect: org.hibernate.dialect.MySQL5Dialect
+org.hibernate.engine.jdbc.JdbcSupportLoader INFO 2015-06-25 12:14:05 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+org.hibernate.transaction.TransactionFactoryFactory INFO 2015-06-25 12:14:05 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+org.hibernate.transaction.TransactionManagerLookupFactory INFO 2015-06-25 12:14:05 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Automatic flush during beforeCompletion(): disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - JDBC batch size: 15
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - JDBC batch updates for versioned data: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Scrollable result sets: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Connection release mode: auto
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Maximum outer join fetch depth: 2
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Default batch fetch size: 1
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Generate SQL with comments: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Order SQL updates by primary key: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Order SQL inserts for batching: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+org.hibernate.hql.ast.ASTQueryTranslatorFactory INFO 2015-06-25 12:14:05 - Using ASTQueryTranslatorFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Query language substitutions: {}
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - JPA-QL strict compliance: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Second-level cache: enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Query cache: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Optimize cache for minimal puts: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Structured second-level cache entries: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Echoing all SQL to stdout
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Statistics: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Default entity-mode: pojo
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Named query checking : enabled
+org.hibernate.cfg.SettingsFactory INFO 2015-06-25 12:14:05 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.impl.SessionFactoryImpl INFO 2015-06-25 12:14:05 - building session factory
+org.hibernate.impl.SessionFactoryObjectFactory INFO 2015-06-25 12:14:05 - Not binding factory to JNDI, no JNDI name configured
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-25 12:14:05 - Running hbm2ddl schema update
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-25 12:14:05 - fetching database metadata
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-25 12:14:05 - updating schema
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-25 12:14:05 - table not found: comment
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-25 12:14:05 - table not found: question
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-25 12:14:05 - table not found: resfile
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-25 12:14:05 - table not found: user
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-25 12:14:05 - table not found: comment
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-25 12:14:05 - table not found: question
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-25 12:14:05 - table not found: resfile
+org.hibernate.tool.hbm2ddl.DatabaseMetadata INFO 2015-06-25 12:14:05 - table not found: user
+org.hibernate.tool.hbm2ddl.SchemaUpdate INFO 2015-06-25 12:14:05 - schema update complete
+org.springframework.orm.hibernate3.HibernateTransactionManager INFO 2015-06-25 12:14:06 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx9abcrisa1kkmppj|384ad17b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx9abcrisa1kkmppj|384ad17b, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/EduServer?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager

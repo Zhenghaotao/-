@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/register_bg">
+    
+    
+    <EditText 
+        android:id="@+id/et_content"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="学习遇到困难吗?晒晒你的问题吧"
+        android:background="@drawable/login_input"
+        android:gravity="top|left"
+        android:paddingBottom="50dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:textSize="14sp"
+        />
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:text="最少10个字符"
+        android:textColor="@color/blue"
+        android:textSize="8sp" />
+     <ImageView 
+         android:id="@+id/iv_addImage"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/et_content"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="-35dp"
+         android:background="@drawable/btn_image"
+         />
+     <RelativeLayout
+        android:id="@+id/rl_imageBox"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="-56dp"
+        android:background="@drawable/listitem_hover"
+        android:padding="2dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_Preview"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+    
+     <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_blue"
+        android:text="发布"
+        android:textColor="#ffffffff"
+        android:textStyle="bold" />
+     
+     <ProgressBar 
+         android:id="@+id/pb_publishing"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:visibility="gone"
+         android:layout_centerHorizontal="true"
+         android:layout_alignParentBottom="true"
+         />
+
+</RelativeLayout>

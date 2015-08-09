@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#ffeef1f3" >
+
+    
+    <com.gdufs.studyplatform.ui.CustomListView
+        android:id="@+id/lv_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#ff000000"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        >
+    </com.gdufs.studyplatform.ui.CustomListView>
+    
+    <ImageView
+        android:id="@+id/iv_backTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="7dp"
+        android:src="@drawable/backtop_button" />
+    
+
+</RelativeLayout>

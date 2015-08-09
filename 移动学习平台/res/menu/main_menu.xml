@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/menu_upload"
+        android:icon="@android:drawable/ic_menu_share"
+        android:showAsAction="always"
+        android:title="@string/menu_upload"
+        />
+    <item 
+        android:id="@+id/menu_downloaded"
+        android:icon="@drawable/menu_download"
+        android:showAsAction="always"
+        android:title="@string/menu_download_manager"/>
+    <item 
+        android:id="@+id/menu_edit"
+        android:icon="@drawable/menu_edit"
+        android:showAsAction="always"
+        android:title="@string/menu_edit"
+        />
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/menu_setting"
+        android:showAsAction="always"
+        android:title="@string/menu_about"/>
+    
+    
+
+    
+    
+</menu>
