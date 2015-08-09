@@ -1,3 +1,5 @@
+涉及到的技术点: c3p0数据源，ssh三大框架的整合，android图片缓存，依赖注入，下拉刷新，图片三级缓存，aop管理事物，自定义控件
+
 (EduServer)服务端:
 1.将EduServer倒入能开发 j2ee 的eclipse
 2.修改 com.gdufs.edu.constant.Constant.java中ROOT_BASE为"本机中tomcat的目录"/webapps/ROOT/
